@@ -10,7 +10,7 @@ const {
     deleteSupervisor, 
     getProfile, 
     updateProfile 
-} = require('../Controllers/supervisorController');
+} = require('../controllers/supervisorController');
 
 // Routes for supervisor's own profile
 router.get('/profile', protect, authorize('supervisor', 'student'), getProfile);
